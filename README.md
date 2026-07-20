@@ -5,7 +5,7 @@ Track NBA team salary-cap situations with a stacked contract chart inspired by m
 ## Stack
 
 - **Frontend:** React + Vite + TypeScript
-- **API:** Express (Node) proxying ESPN roster/contract data
+- **API:** Express locally; Vercel serverless functions in production
 - **Data:** Live player salaries from ESPN; official 2025–26 league thresholds from NBA announcements
 
 ## Quick start
@@ -22,6 +22,15 @@ npm run dev:client
 ```
 
 Open [http://localhost:5173](http://localhost:5173), pick a team, and explore the salary stack.
+
+## Deploy on Vercel
+
+1. Push this repo to GitHub.
+2. In [Vercel](https://vercel.com), **Add New Project** → import the repo.
+3. Leave settings as detected from `vercel.json` (build/output/install are already set).
+4. Deploy — no environment variables required.
+
+The React app is served from `client/dist`. API routes under `/api/*` are serverless functions that reuse `server/src` (ESPN fetch + cache).
 
 ## API
 
