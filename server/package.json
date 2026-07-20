@@ -1,0 +1,16 @@
+{
+  "name": "nba-salary-cap-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nba-salary-cap": "file:..",
+    "node-cache": "^5.1.2"
+  }
+}
