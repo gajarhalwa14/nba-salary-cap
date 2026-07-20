@@ -17,20 +17,11 @@ npm run install:all
 # Terminal 1 — API on http://localhost:3001
 npm run dev:server
 
-# Terminal 2 — UI on http://localhost:5173
+# Terminal 2 — UI on http://localhost:5174
 npm run dev:client
 ```
 
-Open [http://localhost:5173](http://localhost:5173), pick a team, and explore the salary stack.
-
-## Deploy on Vercel
-
-1. Push this repo to GitHub.
-2. In [Vercel](https://vercel.com), **Add New Project** → import the repo.
-3. Leave settings as detected from `vercel.json` (build/output/install are already set).
-4. Deploy — no environment variables required.
-
-The React app is served from `client/dist`. API routes under `/api/*` are serverless functions that reuse `server/src` (ESPN fetch + cache).
+Open [http://localhost:5174](http://localhost:5174), pick a team, and explore the salary stack.
 
 ## API
 
